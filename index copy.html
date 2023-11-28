@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Soolibaba</title>
+ <style>
+ /* Your existing styles */
+/* ... */
+ </style>
+</head>
+<body>
+ <div class="header">
+  <h1>Soolibaba</h1>
+  <p>Your sourcing journey is here</p>
+  <button class="button">Find your school</button>
+  <button class="button">Buy on Soolibaba</button>
+  <button class="button">Sell on Soolibaba</button>
+ </div>
+
+ <div class="sell-form">
+  <h2>Sell on Soolibaba</h2>
+  <form action="/submit_product" method="post" enctype="multipart/form-data">
+   <label for="product-name">Product Name:</label>
+   <input type="text" id="product-name" name="product-name" required><br><br>
+
+   <label for="product-image">Upload Picture:</label>
+   <input type="file" id="product-image" name="product-image" accept="image/*" required><br><br>
+
+   <label for="product-description">Description:</label><br>
+   <textarea id="product-description" name="product-description" rows="4" cols="50" required></textarea><br><br>
+
+   <input type="submit" value="Submit">
+  </form>
+ </div>
+</body>
+</html>
